@@ -1,0 +1,392 @@
+<!DOCTYPE html >
+<html lang="en">
+   <head>
+      <!-- Author: 		 ANDINET GEBRE -->
+      <!-- Date: 		 05/11/2019 -->
+      <!-- Class:		 CSCI 2240 - Client Side Programming -->
+      <!-- Final-part1  -->
+      <!-- Instructor:	Darren Pearson -->
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+      <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700" rel="stylesheet">
+      <title>MyShop</title>
+
+      <link href="css/bootstrap.min.css" rel="stylesheet">
+      <link rel="stylesheet" href="css/fontawesome.css">
+      <link rel="stylesheet" href="css/tooplate-main.css">
+      <link rel="stylesheet" href="css/owl.css">
+      <!-- Start of scriptaculous  codes-->
+      <script src="./library/prototype.js"></script>
+      <script src="./library/scriptaculous.js"></script>
+      <script src="effects.js" type="text/javascript"></script>
+      <!--ScaleEffect-->
+      <script type="text/javascript">
+         function ScaleEffect(element){
+            new Effect.Scale(element, 150);
+         }
+		 <!--Auto Complete-->
+		<script type="text/javascript">
+		
+         window.onload = function() {
+			
+            new Autocompleter.Local('autoCompleteTextField', 'autoCompleteMenu', ['abcdef','abcdeg','xyzabcefg', 'tybabdefg','acdefg'], {ignoreCase:false});
+         }
+      </script>
+         <!-- End  of scriptaculous  codes-->
+      </script>
+	  <style>
+	  
+	  .banner {
+	margin-top: 50px;
+	
+	background-image: url(images/banner-bg.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	padding: 150px 0px;
+	background-position: center center;}
+	margin,body{margin-bottom:0px;}
+
+	  </style>
+   </head>
+   <body style="margin-bottom:0px;">
+      <!-- Pre Header -->
+      <div id="pre-header">
+         <div class="container">
+            <div class="row">
+               <div class="col-md-12">
+               </div>
+            </div>
+         </div>
+      </div>
+      <!-- Navigation -->
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark static-top">
+         <div class="container">
+            <a class="navbar-brand" href="#"><img src="images/logo1.png" alt=""></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+               <ul class="navbar-nav ml-auto">
+                  <li class="nav-item active">
+                     <a class="nav-link" href="index.html">Home
+                     <span class="sr-only">(current)</span>
+                     </a>
+                  </li>
+                  <li class="nav-item">
+                     <!--start of scrolto-->
+                     <a class="nav-link"   onclick="Effect.ScrollTo('all'); return false;">Products</a>
+                  </li>
+                  <li class="nav-item">
+                     <a class="nav-link"  onclick="Effect.ScrollTo('contact Us'); return false;">Contact Us</a>
+                  </li>
+               </ul>
+            </div>
+         </div>
+      </nav>
+      <!--End  of scrolto-->
+      <!-- Page Content -->
+      <!-- Banner Starts Here -->
+      <div class="banner" style="margin-bottom:0px;>
+         <div class="container" style="background-color:red">
+         <div class="row">
+            <div class="col-md-12">
+               <div  id="close" >
+                  <div class="caption" id="toggle_appear">
+                     <!-- start of Effect.Squish-->
+                     <a href="#" onclick="Effect.Squish('close'); return false;">Close/squish</a>
+                     <!-- End of Effect.Squish-->
+                     <h2>Effects used</h2>
+                     <div class="line-dec"></div>
+                     <!--Shrink-->
+                     <p>Effect.SwitchOff,Effect.scale,Effect.Squish ,<strong> Effect.scrolto</strong>   grow,slideup,slidedown,puff,pulsate,fade,fold-
+                        <br><br>Please  click to check the effects <a rel="nofollow" href="https://www.facebook.com/tooplate/">Tooplate</a>  Photo  goes to <a rel="nofollow" href="https://www.pexels.com">Pexels website</a>.
+                     </p>
+                     <div class="main-button" >
+                        <div style="background:#ccc;">
+                           <a href="#" onclick="Effect.toggle('toggle_appear', 'appear'); return false;">Order now/Toggle via 'blind </a>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <!-- Banner Ends Here -->
+      <!-- Featured Starts Here -->
+      <div id="all" style="background-color:pink;">
+         <div id="all featured products"
+         <div id="our products" style="background-color:purple; height:50px;">
+            <h1 id="ourProducts" style="text-align:center;">Our Products</h1>
+            <div class="container">
+               <div class="row">
+                  <div class="col-md-4 col-sm-12">
+                     <div class="section-heading">
+                        <div class="line-dec"></div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div class="featured container no-gutter">
+            <div class="row posts">
+               <div id="1" class="item new col-md-4">
+                  <a  href="">
+                     <div class="featured-item"   id="shrink_demo">
+                        <img src="images/prod1.jpg" alt="">
+                        <!--Start of Shrink effect-->
+                  <a href="#" onclick="Effect.Shrink('shrink_demo'); return false;">Add to cart/Shrink </a>
+                  <!-- start of scale effect -->
+                  <h6 onclick="new Effect.Scale(this.parentNode, 200); return false;">$35.00/Scale</h6>
+                  </div>
+                  </a>
+               </div>
+               <div id="2" class="item high col-md-4" >
+                  <a href="">
+                     <div class="featured-item"  id="fold_demo">
+                        <img src="images/prod2.jpg" alt="">
+                  <a href="#" onclick="Effect.Fold('fold_demo'); return false;">Add to cart/Fold </a>
+                  <h6 onclick="new Effect.Scale(this.parentNode, 200); return false;">$25.00</h6>
+                  </div>
+                  </a>
+               </div>
+               <div id="3" class="item low col-md-4">
+                  <a href="">
+                     <div class="featured-item" id="grow_demo">
+                        <img src="images/prod3.jpg" alt="">
+                  <a href="#" onclick="Effect.Grow('grow_demo'); return false;">Add to cart/grow </a>
+                  <h6 onclick="new Effect.Scale(this.parentNode, 200); return false;">$35.00</h6>
+                  </div>
+                  </a>
+               </div>
+               <div id="4" class="item low col-md-4" >
+                  <a href="">
+                     <div class="featured-item"   id="slideup_demo">
+                        <img src="images/prod4.jpg" alt="">
+                  <a href="#" onclick="Effect.SlideUp('slideup_demo'); return false;">Add to cart/SlideUp </a>
+                  <h6 onclick="new Effect.Scale(this.parentNode, 200); return false;">$45.00</h6>
+                  </div>
+                  </a>
+               </div>
+               <div id="5" class="item new high col-md-4">
+                  <a href="">
+                     <div class="featured-item" id ="pulsate_demo">
+                        <img src="images/prod5.jpg" alt="">
+                  <a href="#" onclick="Effect.Pulsate('pulsate_demo'); return false;" style="line-height:40px;">Add to cart/Pulsate </a>
+                  <h6 onclick="new Effect.Scale(this.parentNode, 200); return false;">$55.00</h6>
+                  </div>
+                  </a>
+               </div>
+               <div id="6" class="item new col-md-4">
+                  <a href="">
+                     <div class="featured-item" id="puff_demo">
+                        <img src="images/prod6.jpg" alt="">
+                  <a href="#" onclick="new Effect.Puff('puff_demo'); return false;">Add to cart/Puff </a>
+                  <h6 onclick="new Effect.Scale(this.parentNode, 200); return false;">$65.00</h6>
+                  </div>
+                  </a>
+               </div>
+               <div id="7" class="item new high col-md-4">
+                  <a href=".html">
+                     <div class="featured-item" id="slidedown_demo">
+                        <img src="images/prod7.jpg" alt="">
+                  <a href="#" onclick="Effect.SlideDown('slidedown_demo'); return false;">Add to cart/SlideDown </a>
+                  <h6 onclick="new Effect.Scale(this.parentNode, 200); return false;">$75.00</h6>
+                  </div>
+                  </a>
+               </div>
+               <div id="8" class="item low new col-md-4">
+                  <a href="">
+                     <div class="featured-item" id="fade_demo">
+                        <img src="images/prod8.jpg" alt="">
+                  <a href="#" onclick="$('fade_demo').fade(); return false;">Add to cart/Fade </a>
+                  <h6 onclick="new Effect.Scale(this.parentNode, 200); return false;">$85.00</h6>
+                  </div>
+                  </a>
+               </div>
+               <div id="9" class="item new col-md-4">
+                  <a href="">
+                     <div class="featured-item" id="switchoff_demo9">
+                        <img src="images/prod9.jpg" alt="">
+                        <!---Effect.Scale Up -->
+                        <!--<h4  >Add to Cart </h4>-->
+                  <a href="#" onclick="Effect.SwitchOff('switchoff_demo9'); return false;">Add to cart/switchoff_ </a>
+                  <h6 onclick="new Effect.Scale(this.parentNode, 200); return false;">$95.00</h6>
+                  </div>
+                  </a>
+               </div>
+            </div>
+         </div>
+      </div>
+      <!-- End of scale effect -->
+      <!--End  of switch effect-->
+
+      <div class="contact-page" id ="contact Us" style="background-color:skyblue;margin-top:0px;">
+         <div class="container">
+            <div class="row">
+               <div class="col-md-12">
+                  <div class="section-heading">
+                     <div class="line-dec"></div>
+                     <h1 style="text-align:center; font-size:35px;color:green;">Contact Us/Autocompleter</h1>
+                  </div>
+               </div>
+               <div class="col-md-6">
+                  <div id="map">
+                     <!-- How to change your own map point
+                        1. Go to Google Maps
+                        2. Click on your location point
+                        3. Click "Share" and choose "Embed map" tab
+                        4. Copy only URL and paste it within the src="" field below
+                        -->
+                     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2823.7276721660273!2d-93.11361628445971!3d44.94920377909815!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x87f62aa4b9cbd887%3A0xee7598b8b07f1abc!2sSaint+Paul+College!5e0!3m2!1sen!2sus!4v1557613510547!5m2!1sen!2sus" width="500" height="500" frameborder="0" style="border:0" allowfullscreen></iframe>
+                  </div>
+               </div>
+               <div class="col-md-6">
+                  <div class="right-content">
+                     <div class="container">
+                        <form id="contact" action="" method="post">
+                           <div class="row">
+                              <div class="col-md-6">
+                                 <fieldset>
+                                    <input name="name" type="text" class="form-control" id="name" placeholder="Your name..." required="">
+                                 </fieldset>
+                              </div>
+                              <div class="col-md-6">
+                                 <fieldset>
+                                    <input name="email" type="text" class="form-control" id="email" placeholder="Your email..." required="">
+                                 </fieldset>
+                              </div>
+                              <div class="col-md-12">
+                                 <fieldset>
+								  <div>
+     
+								<script type="text/javascript">
+		
+         window.onload = function() {
+			
+            new Autocompleter.Local('autoCompleteTextField', 'autoCompleteMenu', ['job','coupon','coupon', 'refund','returns','discount','complaint'], {ignoreCase:false});
+         }
+      </script>
+   </head>
+   <body>		
+      <div>
+         <input type="text" id="autoCompleteTextField" placeholder="Your Subject..."/>
+         <div id="autoCompleteMenu"></div>
+      </div>
+									
+                                 </fieldset>
+                              </div>
+                              <div class="col-md-12">
+                                 <fieldset>
+                                    <textarea name="message" rows="6" class="form-control" id="message" placeholder="Your message..." required=""></textarea>
+                                 </fieldset>
+                              </div>
+                              <div class="col-md-12">
+                                 <fieldset>
+                                    <button type="submit" id="form-submit" class="button">Send Message</button>
+                                 </fieldset>
+                              </div>
+                              <div class="col-md-12">
+                                 <div class="share">
+                                    <h6>You can also keep in touch on: <span><a href="#"><i class="fa fa-facebook"></i></a><a href="#"><i class="fa fa-linkedin"></i></a><a href="#"><i class="fa fa-twitter"></i></a></span></h6>
+                                 </div>
+                              </div>
+                           </div>
+                        </form>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+   
+      <!-- Subscribe Form Starts Here -->
+	
+      <div class="subscribe-form" style="background-color:green;margin-top:0px;";>
+         <div class="container" >
+            <div class="row">
+               <div class="col-md-12">
+                  <div class="section-heading">
+                     <div class="line-dec"></div>
+                     <h1>Subscribe on MyShop now!</h1>
+                  </div>
+               </div>
+               <div class="col-md-8 offset-md-2">
+                  <div class="main-content">
+                     <p>Integer vel turpis ultricies, lacinia ligula id, lobortis augue. Vivamus porttitor dui id dictum efficitur. Phasellus vel interdum elit.</p>
+                     <div class="container">
+                        <form id="subscribe" action="" method="get">
+                           <div class="row">
+                              <div class="col-md-7">
+                                 <fieldset>
+                                    <input name="email" type="text" class="form-control" id="email" 
+                                       onfocus="if(this.value == 'Your Email...') { this.value = ''; }" 
+                                       onBlur="if(this.value == '') { this.value = 'Your Email...';}"
+                                       value="Your Email..." required="">
+                                 </fieldset>
+                              </div>
+                              <div class="col-md-5">
+                                 <fieldset>
+                                    <button type="submit" id="form-submit" class="button">Subscribe Now!</button>
+                                 </fieldset>
+                              </div>
+                           </div>
+                        </form>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+	</div>
+      <!-- Subscribe Form Ends Here -->
+      <!-- Footer Starts Here -->
+	
+      <div class="footer"style="background-color:orange;" >
+         <div class="container">
+            <div class="row">
+               <div class="col-md-12">
+		
+		
+               </div>
+               <div class="col-md-12">
+                  <div class="footer-menu">
+                     <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Help</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">How It Works ?</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                     </ul>
+                  </div>
+               </div>
+               <div class="col-md-12">
+                  <div class="social-icons">
+                     <ul>
+                        <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                        <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                        <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                        <li><a href="#"><i class="fa fa-rss"></i></a></li>
+                     </ul>
+                  </div>
+               </div>
+            </div>
+         </div>
+		</div>
+      <!-- Footer Ends Here -->
+      <!-- Sub Footer Starts Here -->
+      <div class="sub-footer"  style="background-color:white;">
+         <div class="container" >
+            <div class="row">
+               <div class="col-md-12">
+                  <div class="copyright-text">
+                     <h2>Copyright &copy; 2019 Andinet Gebre </h2>
+                        <a rel="nofollow" href="https://unsplash.com/"> All photo taken from  Pexel  and</a>
+						 <a rel="nofollow" href="https://www.pexels.com/"> Unsplash</a>
+
+                  </div>
+               </div>
+            </div>
+         </div>
+		</div>
+   
+   </body>
+ 
+</html>
